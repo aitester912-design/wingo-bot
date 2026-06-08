@@ -7,7 +7,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 import time
 
-import winsound  # <--- Ye line yahan add karein
+
 chrome_options = Options()
 chrome_options.add_experimental_option("debuggerAddress", "127.0.0.1:9222")
 
@@ -114,7 +114,7 @@ try:
     print(f"  End:   Page {small_range['end_p']}, Round {small_range['end_r']}")
 
     # Line 112 ke paas yahan add karein:
-    winsound.Beep(1000, 1000) 
+
 
 except Exception as e:
     print("ERROR:", e)
